@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./bulma-0.9.0/bulma-0.9.0/css/bulma.css">
+  <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <title>UI</title>
 </head>
 <body>
   <div class="container">
     <div class="block">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
+      <nav class="navbar has-background-link" role="navigation" aria-label="main navigation">
+        <!-- <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
             <img src="./assets/cg-logo.jpg" width="80" height="80">
           </a>
-        </div>
+        </div> -->
         
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
@@ -25,12 +25,58 @@
           </div>
           
           <div class="navbar-end">
-            <span class="icon has-text-grey mt-4 mr-1"> <i class="fas fa-search"></i> </span> <input type="text" class="input is-small mt-3 mr-3 has-text-centered is-rounded " placeholder="Search" >  
+            <!-- <span class="icon has-text-grey mt-4 mr-1"> <i class="fas fa-search"></i> </span>  -->
+            <div class="field mr-3">
+              <p class="control has-icons-left">
+                <input class="input is-small is-rounded has-text-centered mt-3 mr-3" type="text" placeholder="Search">
+                <span class="icon is-small is-left mt-3">
+                  <i class="fas fa-search"></i>
+                </span>
+                
+              </p>
+            </div>
+              
           </div>
         </div>
       </nav>
     </div>
     
+    <section class="hero is-link">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Data Lineage Platform
+          </h1>
+          <h2 class="subtitle">
+            What this screen supposed to do
+            <!-- <p class="control has-icons-left">
+              <input class="input is-small is-rounded has-text-centered mt-3 mr-3" type="text" placeholder="Search">
+              <span class="icon is-small is-left mt-3">
+                <i class="fas fa-search"></i>
+              </span>
+            </p> -->
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mt-3 ml-5 mb-3">
+        <p> <span> <a> <i class="fas fa-chevron-circle-left"></i> </a></span> Back to Dashboard</p>
+      </div>
+      <div class="level">
+        <div class="level-left ml-5">
+          <div class="level-item">
+            <p class="title is-6"> Billing Document Line</p>
+          </div>
+        </div>
+        <div class="level-right mr-5">
+          <span class="icon has-text-info mr-3"> <i class="fas fa-download"></i> </span>
+          <span class="icon has-text-info"> <i class="fas fa-share-square"></i> </span>
+        </div>
+      </div>
+    </section>
+
     <div class="block" style="margin-top: 40px;">
       <div class="columns">
         <div class="column has-text-centered">
@@ -45,6 +91,10 @@
           <a><i class="far fa-plus-square"></i></a>  
         </span>
       </p>
+      <p class="notification"> Second column <span class="icon has-text-info ml-5">  
+        <a><i class="far fa-plus-square"></i></a>  
+      </span>
+    </p>
       </div>
       <div class="column has-text-centered">
         <p class="notification"> Third column <span class="icon has-text-info ml-5">  
